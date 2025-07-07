@@ -1,45 +1,43 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Função que calcula o IMC e retorna um valor inteiro conforme a classificação
-int calcula_imc(float peso, float altura) {
-    float imc = peso / (altura * altura);
+int calcula_imc(float p, float h) {
+    float imc = p / (h * h);
 
     if (imc < 18.5)
         return 0; // Magreza
     else if (imc < 25.0)
-        return 1; // Saudável
+        return 1; // SaudÃ¡vel
     else if (imc < 30.0)
         return 2; // Sobrepeso
     else
         return 3; // Obesidade
 }
 
-// Função que imprime o resultado do IMC por extenso (sem switch-case)
-void imprima_imc(float peso, float altura) {
-    int resultado = calcula_imc(peso, altura);
+// FunÃ§Ã£o que imprime o resultado do IMC
+void imprima_imc(float peso, float high) {
+    int r = calcula_imc(peso, high);
 
-    if (resultado == 0)
+    if (r == 0)
         printf("Magreza\n");
-    else if (resultado == 1)
-        printf("Saudável\n");
-    else if (resultado == 2)
+    else if (r == 1)
+        printf("SaudÃ¡vel\n");
+    else if (r == 2)
         printf("Sobrepeso\n");
-    else if (resultado == 3)
+    else if (r == 3)
         printf("Obesidade\n");
 }
 
-// Exemplo de uso
 int main() {
-    float peso, altura;
+    float q, a;
 
     printf("Digite o peso (kg): ");
-    scanf("%f", &peso);
+    scanf("%f", &q);
 
     printf("Digite a altura (m): ");
-    scanf("%f", &altura);
+    scanf("%f", &a);
 
-    imprima_imc(peso, altura);
+    imprima_imc(q, a);
 
     return 0;
 }
