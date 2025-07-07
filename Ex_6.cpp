@@ -1,36 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Função que verifica se um número é palíndromo
-int eh_palindromo(int numero) {
-    int original = numero;
-    int reverso = 0;
+// FunÃ§Ã£o que verifica-se um Ã© palÃ­ndromo
+int eh_palindromo(int num) {
+    int o = num;
+    int r = 0;
 
-    // Invertemos o número
-    while (numero > 0) {
-        int digito = numero % 10;
-        reverso = reverso * 10 + digito;
-        numero /= 10;
+    // Invertemos o nÃºmero
+    while (num > 0) {
+        int di = num % 10;
+        r = r * 10 + d;
+        num /= 10;
     }
 
-    // Compara o original com o número invertido
-    if (original == reverso)
+    // Compara o original com o invertido
+    if (o == r)
         return 1;
     else
         return 0;
 }
 
-// Exemplo de uso
 int main() {
-    int num;
+    int numero;
 
-    printf("Digite um número inteiro: ");
-    scanf("%d", &num);
+    printf("Digite um nÃºmero inteiro: ");
+    scanf("%d", &numero);
 
-    if (eh_palindromo(num))
-        printf("É palíndromo!\n");
+    if (eh_palindromo(numero))
+        printf("Ã‰ palÃ­ndromo!\n");
     else
-        printf("Não é palíndromo.\n");
+        printf("NÃ£o Ã© palÃ­ndromo.\n");
 
     return 0;
 }
