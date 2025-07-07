@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void imprime_ola(){
+void imprimir_ola(){
 	printf("Ola, mundo!");
 }
 
 int main(){
-	imprime_ola();
+	imprimir_ola();
 	return 0;
 }
