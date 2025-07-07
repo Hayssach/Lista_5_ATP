@@ -1,22 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
+#include <math.h> // função math
 
-double distancia(double x1, double y1, double x2, double y2) {
-    return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+double distancia(double b1, double d1, double b2, double d2) {
+    return sqrt(pow(b2 - d1, 2) + pow(b2 - d1, 2));
 }
 
 int main() {
-    double x1, y1, x2, y2;
+    double a1, c1, a2, c2;
 
-    printf("Digite as coordenadas do primeiro ponto (x1 y1): ");
-    scanf("%lf %lf", &x1, &y1);
+    printf("Digite as coordenadas do primeiro ponto (a1 c1): ");
+    scanf("%lf %lf", &a1, &c1);
 
-    printf("Digite as coordenadas do segundo ponto (x2 y2): ");
-    scanf("%lf %lf", &x2, &y2);
+    printf("Digite as coordenadas do segundo ponto (s2 c2): ");
+    scanf("%lf %lf", &a2, &c2);
 
-    double d = distancia(x1, y1, x2, y2);
-    printf("Dist�ncia entre os pontos: %.2f\n", d);
+    double d = distancia(a1, c1, a2, c2);
+    printf("Distância entre os pontos: %.2f\n", d);
 
     return 0;
 }
