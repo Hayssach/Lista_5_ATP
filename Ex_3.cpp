@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Função que converte Celsius para Fahrenheit
-float celsius_para_fahrenheit(float celsius) {
-    return (celsius * 9.0 / 5.0) + 32.0;
+// funÃ§Ã£o para converter celsius para fahrenheit 
+float c_para_f(float c) {
+    return (c * 9.0 / 5.0) + 32.0;
 }
 
 int main() {
-    float celsius;
+    float cel;
 
     printf("Digite a temperatura em Celsius: ");
-    scanf("%f", &celsius);
+    scanf("%f", &cel);
 
-    float fahrenheit = celsius_para_fahrenheit(celsius);
-    printf("%.2f graus Celsius equivalem a %.2f graus Fahrenheit.\n", celsius, fahrenheit);
-
+    float fah = c_para_f(c);
+    printf("%.2f graus Celsius equivalem a %.2f graus Fahrenheit.\n", cel, fah);
+    getchar();
     return 0;
 }
