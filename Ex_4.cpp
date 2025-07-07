@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Função que verifica se um número é primo
-int eh_primo(int numero) {
-    if (numero < 2) {
+// verifica se eh primo
+int eh_primo(int num) {
+    if (num < 2) {
         return 0;
     }
-    for (int i = 2; i * i <= numero; i++) {
-        if (numero % i == 0) {
+    for (int j = 2; j * j <= num; j++) {
+        if (num % j == 0) {
             return 0;
         }
     }
@@ -15,16 +15,16 @@ int eh_primo(int numero) {
 }
 
 int main() {
-    int num;
+    int numero;
 
-    printf("Digite um número inteiro: ");
-    scanf("%d", &num);
+    printf("Digite um nÃºmero inteiro: ");
+    scanf("%d", &numero);
 
-    if (eh_primo(num)) {
-        printf("%d é primo.\n", num);
+    if (eh_primo(numero)) {
+        printf("%d Ã© primo.\n", numero);
     } else {
-        printf("%d não é primo.\n", num);
+        printf("%d nÃ£o Ã© primo.\n", numero);
     }
-
+    getchar();
     return 0;
 }
