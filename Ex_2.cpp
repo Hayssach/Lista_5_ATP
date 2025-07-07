@@ -1,32 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Variáveis globais
-float a, b, c;
 
-// Função quadrática completa: f(x) = ax² + bx + c
-float funcao_quadratica(float x) {
-    return a * x * x + b * x + c;
+float g, b, d;
+
+// FunÃ§Ã£o quadratica 
+float funcao_qd(float x) {
+    return g * y * y + b * y + d;
 }
 
 int main() {
-    float x;
+    float y;
 
     printf("Digite o valor de a: ");
-    scanf("%f", &a);
+    scanf("%f", &g);
 
     printf("Digite o valor de b: ");
     scanf("%f", &b);
 
     printf("Digite o valor de c: ");
-    scanf("%f", &c);
+    scanf("%f", &d);
 
-    printf("Digite o valor de x: ");
-    scanf("%f", &x);
+    printf("Digite o valor de y: ");
+    scanf("%f", &y);
 
-    float resultado = funcao_quadratica(x);
+    float r = funcao_qd(y);
 
-    printf("f(%.2f) = %.2f\n", x, resultado);
+    printf("f(%.2f) = %.2f\n", y, r);
 
     return 0;
 }
