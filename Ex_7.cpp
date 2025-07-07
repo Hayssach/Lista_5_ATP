@@ -2,23 +2,22 @@
 #include <stdlib.h>
 #define PI 3.14159265359
 
-// FunÁ„o que calcula o perÌmetro e a ·rea de um cÌrculo usando ponteiros
-void calcular_circulo(float raio, float *perimetro, float *area) {
-    *perimetro = 2 * PI * raio;
-    *area = PI * raio * raio;
+// Fun√ß√£o que calcula o per√≠metro e a √°rea de um c√≠rculo
+void calcular_circulo(float r, float *p, float *a) {
+    *p = 2 * PI * r;
+    *a = PI * r * r;
 }
 
-// Exemplo de uso
 int main() {
-    float raio, p, a;
+    float raio, perimetro, area;
 
-    printf("Digite o raio do cÌrculo: ");
+    printf("Digite o raio do c√≠rculo: ");
     scanf("%f", &raio);
 
-    calcular_circulo(raio, &p, &a);
+    calcular_circulo(raio, & perimetro, &area);
 
-    printf("PerÌmetro: %.2f\n", p);
-    printf("¡rea: %.2f\n", a);
+    printf("Per√≠metro: %.2f\n", perimetro);
+    printf("√Årea: %.2f\n", area);
 
     return 0;
 }
